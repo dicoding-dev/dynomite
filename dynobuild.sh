@@ -64,5 +64,6 @@ src/dynomite -h
 
 echo
 echo_cyan "=> Clean up"
-cp /tmp/dynomite/src/dynomite "$(pwd)/dynomite"
+cd "$(dirname "$0")"
+cp /tmp/dynomite/src/dynomite .
 rm -r /tmp/dynomite
